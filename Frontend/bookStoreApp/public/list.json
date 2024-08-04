@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "name": "Atomic Habits",
+        "title": "A guide on building good habits and breaking bad ones.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 2,
+        "name": "Sapiens",
+        "title": "An exploration of the history of humankind.",
+        "price": 22.99,
+        "category": "History",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 3,
+        "name": "The Subtle Art",
+        "title": "An honest approach to living a good life.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 4,
+        "name": "Educated",
+        "title": "A memoir of knowledge and self-discovery.",
+        "price": 16.50,
+        "category": "Memoir",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 5,
+        "name": "Becoming",
+        "title": "Michelle Obama's inspiring journey.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 6,
+        "name": "The Power of Habit",
+        "title": "Understanding the science of habit formation.",
+        "price": 15.99,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 7,
+        "name": "1984",
+        "title": "A dystopian novel on surveillance and control.",
+        "price": 12.99,
+        "category": "Fiction",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 8,
+        "name": "To Kill a Mockingbird",
+        "title": "A novel addressing racial injustice.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 9,
+        "name": "The Catcher in the Rye",
+        "title": "A story of teenage alienation.",
+        "price": 9.99,
+        "category": "Fiction",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 10,
+        "name": "The Art of War",
+        "title": "Ancient strategies for modern life.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 1,
+        "name": "Atomic Habits",
+        "title": "A guide on building good habits and breaking bad ones.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 2,
+        "name": "Sapiens",
+        "title": "An exploration of the history of humankind.",
+        "price": 22.99,
+        "category": "History",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 3,
+        "name": "The Subtle Art",
+        "title": "An honest approach to living a good life.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 4,
+        "name": "Educated",
+        "title": "A memoir of knowledge and self-discovery.",
+        "price": 16.50,
+        "category": "Memoir",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 5,
+        "name": "Becoming",
+        "title": "Michelle Obama's inspiring journey.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 6,
+        "name": "The Power of Habit",
+        "title": "Understanding the science of habit formation.",
+        "price": 15.99,
+        "category": "Self",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 7,
+        "name": "1984",
+        "title": "A dystopian novel on surveillance and control.",
+        "price": 12.99,
+        "category": "Fiction",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 8,
+        "name": "To Kill a Mockingbird",
+        "title": "A novel addressing racial injustice.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 9,
+        "name": "The Catcher in the Rye",
+        "title": "A story of teenage alienation.",
+        "price": 9.99,
+        "category": "Fiction",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    },
+    {
+        "id": 10,
+        "name": "The Art of War",
+        "title": "Ancient strategies for modern life.",
+        "price": 0,
+        "category": "Free",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?t=st=1722663804~exp=1722667404~hmac=8b585bdc199ac58d279fbbe76422c6ed853989da647722a76b78ff74569a4eec&w=740"
+    }
+]
