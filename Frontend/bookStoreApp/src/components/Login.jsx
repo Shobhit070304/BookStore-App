@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import axiosInstance from "../../src/axios";
+import toast from "react-hot-toast";
 
 const Login = () => {
   const {
@@ -9,7 +11,28 @@ const Login = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = async (data) => {
+    const userInfo = {
+      email: data.email,
+      password: data.password,
+    };
+
+    try {
+      const res = await axiosInstance.post("/user/login", userInfo);
+      if (res) {
+        toast.success("LoggedIn Successfully");
+        document.getElementById("my_modal_3").close();
+        setTimeout(() => {
+          window.location.reload();
+          localStorage.setItem("Users", JSON.stringify(res.data.user));
+        }, 1000);
+      }
+    } catch (error) {
+      if (error.response) {
+        toast.error("Error : " + error.response.data.message);
+      }
+    }
+  };
 
   return (
     <div>
@@ -37,7 +60,11 @@ const Login = () => {
               {...register("email", { required: true })}
             />
             <br />
-            {errors.email && <span className="text-sm text-red-500">This field is required</span>}
+            {errors.email && (
+              <span className="text-sm text-red-500">
+                This field is required
+              </span>
+            )}
             <br />
             <label className="text-sm text-zinc-500" htmlFor="password">
               Password
@@ -51,7 +78,11 @@ const Login = () => {
               {...register("password", { required: true })}
             />
             <br />
-            {errors.password && <span className="text-sm text-red-500">This field is required</span>}
+            {errors.password && (
+              <span className="text-sm text-red-500">
+                This field is required
+              </span>
+            )}
             <div className="w-full flex flex-col items-center">
               <button className="w-full  py-2 rounded-md text-white bg-blue-600 my-4">
                 Login

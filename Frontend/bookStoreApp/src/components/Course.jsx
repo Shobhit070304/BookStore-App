@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import list from "../../public/list.json";
+import axios from "axios";
 import Card from "./Card";
 
 const Course = () => {
-  const Books = list.filter((book) => book.category !== "Free");
+  const [books, setBooks] = useState([]);
+
+  useEffect(() => {
+    const getBooks = async () => {
+      try {
+        const res = await axios.get("http://localhost:3000/book");
+        setBooks(res.data);
+      } catch (error) {
+        console.log("Error : ", error);
+      }
+    };
+    getBooks();
+  }, []);
   return (
     <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
       <div className="mt-28 items-center justify-center text-center">
@@ -27,10 +39,8 @@ const Course = () => {
         </Link>
       </div>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
-        {Books.map(function(book){
-          return(
-            <Card book={book} key={book.id} />
-          )
+        {books.map(function (book) {
+          return <Card book={book} key={book.id} />;
         })}
       </div>
     </div>

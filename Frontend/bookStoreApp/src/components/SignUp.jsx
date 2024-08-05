@@ -1,16 +1,39 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Login from "./Login";
 import { useForm } from "react-hook-form";
+import axiosInstance from "../../src/axios";
+import toast from "react-hot-toast";
 
 const SignUp = () => {
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = async (data) => {
+    const userInfo = {
+      name: data.name,
+      email: data.email,
+      password: data.password,
+    };
+
+    try {
+      const res = await axiosInstance.post("/user/signup", userInfo);
+      if (res) {
+        toast.success("User registered successfully!");
+        navigate("/");
+      }
+      localStorage.setItem("Users", JSON.stringify(res.data.user));
+    } catch (error) {
+      if (error.response) {
+        toast.error("Error : " + error.response.data.message);
+      }
+    }
+  };
 
   return (
     <div className="w-full min-h-screen flex justify-center items-center">
@@ -36,7 +59,9 @@ const SignUp = () => {
             {...register("name", { required: true })}
           />
           <br />
-          {errors.name && <span className="text-sm text-red-500">This field is required</span>}
+          {errors.name && (
+            <span className="text-sm text-red-500">This field is required</span>
+          )}
           <br />
           <label className="text-sm text-zinc-500">Email</label>
           <input
@@ -47,7 +72,9 @@ const SignUp = () => {
             {...register("email", { required: true })}
           />
           <br />
-          {errors.email && <span className="text-sm text-red-500">This field is required</span>}
+          {errors.email && (
+            <span className="text-sm text-red-500">This field is required</span>
+          )}
           <br />
           <label className="text-sm text-zinc-500">Password</label>
           <input
@@ -58,7 +85,9 @@ const SignUp = () => {
             {...register("password", { required: true })}
           />
           <br />
-          {errors.password && <span className="text-sm text-red-500">This field is required</span>}
+          {errors.password && (
+            <span className="text-sm text-red-500">This field is required</span>
+          )}
           <div className="w-full flex flex-col items-center">
             <button className="w-full  py-2 rounded-md text-white bg-blue-600 my-4">
               Signup
