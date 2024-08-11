@@ -11,10 +11,10 @@ const Contact = () => {
   const onSubmit = (data) => console.log(data);
   return (
     <div className="w-full min-h-screen flex justify-center items-center ">
-      <div className="min-w-screen md:w-1/3 p-6 py-6 border border-zinc-200 rounded-md ">
+      <div className="min-w-screen md:w-1/3 p-6 py-6 border border-zinc-200 rounded-md dark:bg-zinc-800">
         <form onSubmit={handleSubmit(onSubmit)}>
           <h1 className="text-3xl font-semibold mb-8">Contact Us</h1>
-          <label className="text-sm text-zinc-500 ">Name</label>
+          <label className="text-sm text-zinc-500 dark:text-white">Name</label>
           <input
             type="text"
             placeholder="name"
@@ -27,7 +27,7 @@ const Contact = () => {
             <span className="text-sm text-red-500">This field is required</span>
           )}
           <br />
-          <label className="text-sm text-zinc-500 ">Email</label>
+          <label className="text-sm text-zinc-500 dark:text-white ">Email</label>
           <input
             type="email"
             placeholder="email"
@@ -41,7 +41,7 @@ const Contact = () => {
           )}
           <br />
 
-          <label className="text-sm text-zinc-500 ">Message</label>
+          <label className="text-sm text-zinc-500 dark:text-white">Message</label>
           <textarea
             name="message"
             rows={4}

@@ -38,22 +38,24 @@ const Login = () => {
     <div>
       {/* You can open the modal using document.getElementById('ID').showModal() method */}
       <dialog id="my_modal_3" className="modal ">
-        <div className="modal-box py-8 px-6 text-black">
+        <div className="modal-box py-8 px-6 text-black dark:bg-zinc-700">
           <form method="dialog" onSubmit={handleSubmit(onSubmit)}>
             {/* if there is a button in form, it will close the modal */}
-            <Link to="/">
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-                ✕
-              </button>
+            <Link
+              to="/"
+              className="btn btn-sm btn-ghost absolute right-2 top-2 dark:text-white"
+              onClick={() => document.getElementById("my_modal_3").close()}
+            >
+              ✕
             </Link>
 
-            <h3 className="text-3xl text-zinc-800 mb-4">Login</h3>
-            <label className="text-sm text-zinc-500" htmlFor="email">
+            <h3 className="text-3xl text-zinc-800 mb-8 dark:text-white">Login</h3>
+            <label className="text-sm text-zinc-500 dark:text-white" htmlFor="email">
               Email
             </label>
             <input
               type="email"
-              className="w-full py-2 px-3 rounded-md mb-2 bg-zinc-200 border border-zinc-200 outline-none my-2"
+              className="w-full py-2 px-3 rounded-md mb-4 bg-zinc-200 border border-zinc-200 outline-none my-2"
               placeholder="email"
               name="email"
               id="email"
@@ -61,12 +63,12 @@ const Login = () => {
             />
             <br />
             {errors.email && (
-              <span className="text-sm text-red-500">
+              <p className="text-sm text-red-500">
                 This field is required
-              </span>
+              </p>
             )}
-            <br />
-            <label className="text-sm text-zinc-500" htmlFor="password">
+            
+            <label className="text-sm text-zinc-500 dark:text-white" htmlFor="password">
               Password
             </label>
             <input
@@ -79,19 +81,19 @@ const Login = () => {
             />
             <br />
             {errors.password && (
-              <span className="text-sm text-red-500">
+              <p className="text-sm text-red-500">
                 This field is required
-              </span>
+              </p>
             )}
             <div className="w-full flex flex-col items-center">
-              <button className="w-full  py-2 rounded-md text-white bg-blue-600 my-4">
+              <button className="w-full  py-2 rounded-md text-white bg-blue-600 hover:bg-blue-700 my-4">
                 Login
               </button>
-              <p className="text-zinc-500 text-sm mt-2">
+              <p className="text-zinc-500 text-sm mt-2 dark:text-white">
                 Not registered?{" "}
                 <Link
                   to="/signup"
-                  className="text-blue-500 underline hover:text-blue-800 cursor-pointer"
+                  className="text-blue-500 underline hover:text-blue-600 cursor-pointer"
                 >
                   SignUp
                 </Link>

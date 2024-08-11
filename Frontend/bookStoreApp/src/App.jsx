@@ -13,6 +13,8 @@ const App = () => {
 
   return (
     <>
+    <div className="dark:bg-[#121212] dark:text-white">
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route
@@ -20,9 +22,10 @@ const App = () => {
           element={authUser ? <Courses /> : <Navigate to="/signup" />}
         />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/contacts" element={authUser ? <Contacts /> : <Navigate to="/signup" />} />
       </Routes>
       <Toaster />
+    </div>
     </>
   );
 };

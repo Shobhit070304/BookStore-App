@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import list from "../../public/list.json";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -70,7 +69,7 @@ const FreeBook = () => {
           </p>
         </div>
         <div>
-          <Slider {...settings}>
+          <Slider {...settings} className="text-black">
             {books.map(function (book) {
               return <Card book={book} key={book.id} />;
             })}

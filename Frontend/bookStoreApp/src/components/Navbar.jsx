@@ -60,7 +60,7 @@ const Navbar = () => {
     <>
       <div>
         <div
-          className={`navbar max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-[#121212] dark:text-white bg-base-100 drop-shadow fixed top-0 left-0 right-0 z-50
+          className={`navbar max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-[#121212] dark:text-white dark:border dark:border-b-white bg-base-100 drop-shadow fixed top-0 left-0 right-0 z-50
             ${
               sticky
                 ? "sticky-navbar shadow-md bg-base-200  dark:bg-zinc-700 duration-300 transition-all ease-in-out"
@@ -97,7 +97,7 @@ const Navbar = () => {
                 {navitems}
               </ul>
             </div>
-            <a className="text-2xl font-bold cursor-pointer">BookStore</a>
+            <a className="text-2xl font-bold cursor-pointer" href="/">BookStore</a>
           </div>
           <div className="navbar-end">
             <div className="navbar-center hidden lg:flex">
@@ -157,7 +157,7 @@ const Navbar = () => {
             ) : (
               <div>
                 <a
-                  className="text-white bg-zinc-800 px-3 py-2 rounded-md cursor-pointer duration-300 hover:bg-zinc-600 dark:bg-zinc-600"
+                  className="text-white bg-blue-500 px-3 py-2 rounded-md cursor-pointer duration-300 hover:bg-blue-600 dark:bg-zinc-600"
                   onClick={() => {
                     document.getElementById("my_modal_3").showModal();
                   }}
